@@ -1,0 +1,97 @@
+:root {
+  --primary: #4caf50;
+  --primary-dark: #388e3c;
+  --secondary: #c8e6c9;
+  --background: #f4fdf5;
+  --text: #2e3d2f;
+  --accent: #81c784;
+  --link: #2e7d32;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+h1, h2, h3 {
+  color: var(--primary-dark);
+}
+
+nav {
+  background-color: var(--primary);
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 15px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+main {
+  padding: 20px;
+}
+
+input, button {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-dark);
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+form {
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+div.product-card {
+  border: 1px solid var(--accent);
+  padding: 10px;
+  width: 200px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px #cce9cc;
+}
+
+div.product-card h3 {
+  margin: 5px 0;
+}
+
+div.product-card strong {
+  color: var(--primary-dark);
+}
+
+.product-card img {
+  max-width: 150px;
+  height: 300px;
+  border-radius: 6px 6px 0 0; /* rotunjim doar colțurile de sus */
+  object-fit: cover;
+  margin-bottom: 10px; /* spațiu între imagine și restul cardului */
+  display: block;
+}
+
